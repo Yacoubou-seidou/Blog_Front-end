@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../../../assets/images/logo-no-background.png'
 import Image from 'next/image';
-import '../login/login.css'
+import '../login.css'
 const Login = () => {
   return (
     <div className="w-full contain">
