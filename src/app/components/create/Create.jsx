@@ -15,7 +15,7 @@ export const Create = () => {
     <>
       <section className='newPost'>
         <div className='container boxItems'>
-          <div className='img '>{file && <Image src={URL.createObjectURL(file)} alt='images' />}</div>
+          <div className='img '>{file && <Image className="image" src={URL.createObjectURL(file)} alt='images' />}</div>
           <form onSubmit={handleSubmit}>
             <div className='inputfile flexCenter'>
               <label htmlFor='inputfile'>
