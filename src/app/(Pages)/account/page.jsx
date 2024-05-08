@@ -1,4 +1,5 @@
 import React from "react"
+import "./account.css"
 import Image from "next/image"
 import { IoIosAddCircleOutline } from "react-icons/io"
 
