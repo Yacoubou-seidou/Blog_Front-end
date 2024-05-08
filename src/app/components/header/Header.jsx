@@ -1,7 +1,7 @@
 import React, { useContext } from "react"
 import logo from "../../assets/images/logo.svg"
 import "./header.css"
-
+import { User } from "./User"
 import { Link } from "react-router-dom"
 import Image from "next/image"
 export const Header = () => {
@@ -28,7 +28,7 @@ export const Header = () => {
             </ul>
           </nav>
           <div className='account flexCenter'>
-            
+            <User />
           </div>
         </div>
       </header>
