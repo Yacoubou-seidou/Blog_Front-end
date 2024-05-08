@@ -9,27 +9,9 @@ import { MdNavigateNext } from "react-icons/md"
 import axios from "axios"
 import { useLocation } from "react-router-dom"
 import { Link } from "react-router-dom"
+import NextArrow from "../Ui/NextArrow"
+import PrevArrow from "../Ui/PrevArrow"
 
-const SampleNextArrow = (props) => {
-  const { onClick } = props
-  return (
-    <div className='control-btn' onClick={onClick}>
-      <button className='next'>
-        <MdNavigateNext className='icon' />
-      </button>
-    </div>
-  )
-}
-const SamplePrevArrow = (props) => {
-  const { onClick } = props
-  return (
-    <div className='control-btn' onClick={onClick}>
-      <button className='prev'>
-        <GrFormPrevious className='icon' />
-      </button>
-    </div>
-  )
-}
 export const Category = () => {
   const settings = {
     dots: false,
@@ -37,8 +19,8 @@ export const Category = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 2,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 800,
