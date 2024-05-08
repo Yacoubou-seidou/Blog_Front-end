@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react"
 import "./category.css"
-import { category } from "../../assets/data/data"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
-import { GrFormPrevious } from "react-icons/gr"
-import { MdNavigateNext } from "react-icons/md"
 import axios from "axios"
 import { useLocation } from "react-router-dom"
 import { Link } from "react-router-dom"
@@ -13,6 +10,7 @@ import NextArrow from "../Ui/NextArrow"
 import PrevArrow from "../Ui/PrevArrow"
 
 export const Category = () => {
+  const category = []
   const settings = {
     dots: false,
     infinite: true,
