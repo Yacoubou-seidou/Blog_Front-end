@@ -1,4 +1,5 @@
 import React from 'react'
+import "btn.css"
 import { GrFormPrevious } from "react-icons/gr"
 const PrevArrow = (props) => {
   const { onClick } = props

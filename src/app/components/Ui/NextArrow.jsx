@@ -1,4 +1,5 @@
 import React from 'react'
+import "btn.css"
 import { MdNavigateNext } from "react-icons/md"
 const NextArrow = (props) => {
   const { onClick } = props
